@@ -4,7 +4,6 @@ import lab_1.exceptions.*;
 import lab_1.transports.*;
 
 public class Main {
-
     public static void main(String[] args) throws NoSuchModelNameException, DuplicateModelNameException {
 
         //проверка методов для объектов Car
