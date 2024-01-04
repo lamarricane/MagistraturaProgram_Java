@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="calculator.Controller">
+   <StackPane prefHeight="175.0" prefWidth="300.0" translateY="50.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#18466b" height="100.0" smooth="false" stroke="#184669"
+                 strokeType="OUTSIDE" translateY="-1.0" width="250.0"/>
+      <TextField fx:id="output" maxHeight="55.0" maxWidth="200.0" minHeight="55.0" minWidth="200.0"/>
+   </StackPane>
+   <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="71.0" prefWidth="313.0"
+         translateY="72.0">
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#degreeFunc" text="^" translateX="-4.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#seven" text="7" translateX="-2.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#eight" text="8">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#nine" text="9" translateX="2.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#sqrtFunc" text="√" translateX="4.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+   </HBox>
+   <HBox alignment="CENTER" layoutX="10.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="71.0"
+         prefWidth="313.0" translateY="76.0">
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#divFunc" text="/" translateX="-4.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#four" text="4" translateX="-2.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#five" text="5">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#six" text="6" translateX="2.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#minusFunc" text="-" translateX="4.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+   </HBox>
+   <HBox alignment="CENTER_RIGHT" layoutX="16.0" layoutY="223.0" maxHeight="-Infinity" maxWidth="-Infinity"
+         minWidth="237.0" prefHeight="55.0" prefWidth="235.0" translateX="-27.0" translateY="79.0">
+      <Button layoutX="1.0" maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#multiFunc" text="*" translateX="-13.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button layoutX="1.0" maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#one" text="1" translateX="-11.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button layoutX="1.0" maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#two" text="2" translateX="-9.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button layoutX="1.0" maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#three" text="3" translateX="-7.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+   </HBox>
+   <HBox alignment="CENTER_RIGHT" layoutX="42.0" layoutY="341.0" maxHeight="-Infinity" maxWidth="-Infinity"
+         minWidth="237.0" prefHeight="55.0" prefWidth="235.0" translateX="-27.0" translateY="82.0">
+      <Button layoutX="1.0" maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#resetFunc" text="CE" translateX="-13.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button layoutX="1.0" maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#zero" text="0" translateX="-11.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button layoutX="1.0" maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#point" text="." translateX="-9.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+      <Button layoutX="1.0" maxHeight="55.0" maxWidth="55.0" minHeight="55.0" minWidth="55.0" mnemonicParsing="false"
+              onAction="#equallyFunc" text="=" translateX="-7.0">
+         <font>
+            <Font size="14.0"/>
+         </font>
+      </Button>
+   </HBox>
+   <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="112.0" minWidth="55.0" mnemonicParsing="false"
+           onAction="#sumFunc" prefHeight="54.0" text="+" translateX="114.0" translateY="-30.0">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </Button>
+</VBox>
