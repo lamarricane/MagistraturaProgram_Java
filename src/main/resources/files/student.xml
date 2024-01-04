@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<student lastname="Карпова">
+  <subject mark="5.0" title="Английский язык"/>
+  <subject mark="4.0" title="Оптическая иформатика"/>
+  <subject mark="3.0" title="Квантовая физика"/>
+  <average>4.0</average>
+</student>

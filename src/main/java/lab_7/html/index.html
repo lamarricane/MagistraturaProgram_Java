@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Калькулятор </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="function.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body style="background-image: url('background.jpg');">
+<form action="result.html">
+    <header class="header">
+        <div class="container">
+            <div class="row" align="center">
+                <h1> Здесь считаются числа </h1>
+                <h3> Вид операций </h3>
+                <ol>
+                    <tr>
+                        <th><input type="radio" id="plus" name="operation" value="+">
+                            <label> Сложить </label>
+                        </th>
+                        <th><input type="radio" id="minus" name="operation" value="-">
+                            <label> Вычесть </label>
+                        </th>
+                        <th><input type="radio" id="multiplication" name="operation" value="*">
+                            <label> Умножить </label>
+                        </th>
+                        <th><input type="radio" id="division" name="operation" value="/">
+                            <label> Разделить </label>
+                        </th>
+                    </tr>
+                </ol>
+                <p>
+                    <label>Значение:</label>
+                    <input class="text-field_input" type="text" id="value1" name="value1" placeholder="Введите число">
+                    <label>Значение:</label>
+                    <input class="text-field_input" type="text" id="value2" name="value2" placeholder="Введите число">
+                </p>
+                <button class="btn-main" onclick="setIndex()" type="submit">Посчитать <input id="result" type="hidden"
+                                                                                             name="result"></button>
+            </div>
+        </div>
+    </header>
+</form>
+</body>
+</html>

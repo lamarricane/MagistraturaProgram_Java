@@ -1,0 +1,58 @@
+table {
+    width: 100%;
+    border: 2px black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+    border: 3px solid black;
+    vertical-align: center;
+    text-align: center;
+}
+
+body {
+    font: 14pt Impact;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+}
+
+a:hover {
+    color: red;
+}
+
+.btn-main {
+  min-width: 100px;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676d7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  background: #1d49aa;
+}
+
+.btn-main:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+.text-field_input {
+  width: 10%;
+  height: 2%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+}
